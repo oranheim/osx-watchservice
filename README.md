@@ -1,10 +1,34 @@
-http://www195.pair.com/mik3hall/index.html#trz
+Fork: http://www195.pair.com/mik3hall/index.html#trz
 
-java -cp macnio2.jar -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider LotsOfEvents
+Build:
 
-java -cp target/watchservice.jar -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider LotsOfEvents
+```
+$ mvn clean install -DskipTests
+$ cp libmacattrs.dylib /Library/Java/JavaVirtualMachines/jdk8/jre/lib/  (be careful with patching your JDK)
+```
 
-mvn clean test -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider -Dtest=MacWatchersTest
+Dependency:
 
-mvn clean test -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider
+```
+<dependency>
+    <groupId>no.oranheim.macos.watchservice</groupId>
+    <artifactId>watchservice</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <scope>compile</scope>
+</dependency>
+``` 
+
+Usage:
+
+```
+$ java -cp macnio2.jar -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider LotsOfEvents
+
+$ java -cp target/watchservice.jar -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider LotsOfEvents
+
+$ mvn clean test -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider -Dtest=MacWatchersTest
+
+$ mvn clean test -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider
+```
+
+
 
