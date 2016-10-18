@@ -1,1 +1,0 @@
-package us.hall.trz.osx;import java.awt.Color;import java.util.Set;public interface MacFinderFileAttributeView extends MacFileAttributeView {	public String name();	public Color labelColor();	public Set<FinderFlag> finderFlags();}

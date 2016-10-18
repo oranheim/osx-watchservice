@@ -3,6 +3,8 @@ package no.oranheim.macos.watchservice.osx;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import static no.oranheim.macos.watchservice.osx.LS.*;
+
 /**
  * Holds JNI obtained information for Launch Services attributes
  *
