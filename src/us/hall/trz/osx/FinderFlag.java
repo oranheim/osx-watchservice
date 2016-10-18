@@ -1,1 +1,0 @@
-package us.hall.trz.osx;/** Comments from Finder.h */public enum FinderFlag {		/** Files and folders */	COLOR,		/** Files and folders */	HAS_CUSTOM_ICON,		/** Files only */	IS_STATIONERY,		/** Files and folders */	NAME_LOCKED,		/** Files and folders */	IS_INVISIBLE,		/** Files only */	IS_ALIAS;	}
