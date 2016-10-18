@@ -51,14 +51,14 @@
 			<arg value="-c"/>
 			<arg value="/usr/libexec/java_home -v 1.7 --exec java -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider
 			    -cp ${class.path}:macnio2.jar org.junit.runner.JUnitCore 
-			    us.hall.trz.osx.test.MacAttributesTest" />
+			    MacAttributesTest"/>
 		</exec>
 		<exec failonerror="true"
 			executable="/bin/sh" os="Mac OS X">
 			<arg value="-c"/>
 			<arg value="/usr/libexec/java_home -v 1.7 --exec java -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider
 			    -cp ${class.path}:macnio2.jar org.junit.runner.JUnitCore 
-			    us.hall.trz.osx.test.MacWatchersTest" />
+			    MacWatchersTest"/>
 		</exec>
 	</target>
 	
