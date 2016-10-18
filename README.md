@@ -4,3 +4,7 @@ java -cp macnio2.jar -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.o
 
 java -cp target/watchservice.jar -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider LotsOfEvents
 
+mvn clean test -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider -Dtest=MacWatchersTest
+
+mvn clean test -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider
+

@@ -11,6 +11,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class MacAttributesTest {
@@ -66,6 +67,7 @@ public class MacAttributesTest {
 	}
 	
 	@Test
+	@Ignore
 	public void testLS() {
 	   try {
 	      File f = new File("build.xml");
@@ -95,6 +97,7 @@ public class MacAttributesTest {
 	}
 	
 	@Test
+	@Ignore
 	public void testXAttr() {
 		try {
 			File f = new File("build.xml");
