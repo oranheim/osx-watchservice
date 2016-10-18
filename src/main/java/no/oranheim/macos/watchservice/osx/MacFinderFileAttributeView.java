@@ -1,1 +1,0 @@
-package no.oranheim.macos.watchservice.osx;import java.awt.*;import java.util.Set;public interface MacFinderFileAttributeView extends MacFileAttributeView {    public String name();    public Color labelColor();    public Set<FinderFlag> finderFlags();}

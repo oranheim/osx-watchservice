@@ -1,1 +1,0 @@
-package no.oranheim.macos.watchservice.osx;public interface MacLSFileAttributeView extends MacFileAttributeView {}
