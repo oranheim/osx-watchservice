@@ -2,12 +2,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>no.oranheim.macos.watchservice</groupId>
+    <groupId>us.hall.trz.osx</groupId>
     <artifactId>watchservice</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>osx-watchservice</name>
-    <url>http://descoped.org</url>
+    <url>http://www195.pair.com/mik3hall/index.html#trz</url>
 
     <dependencies>
         <dependency>
@@ -19,11 +19,12 @@
     </dependencies>
 
     <build>
-        <finalName>${project.artifactId}</finalName>
+        <finalName>${project.artifactId}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>

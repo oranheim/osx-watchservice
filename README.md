@@ -11,7 +11,7 @@ Dependency:
 
 ```
 <dependency>
-    <groupId>no.oranheim.macos.watchservice</groupId>
+    <groupId>us.hall.trz.osx</groupId>
     <artifactId>watchservice</artifactId>
     <version>1.0-SNAPSHOT</version>
     <scope>compile</scope>

@@ -15,6 +15,7 @@ import java.nio.file.WatchService;
 import java.util.List;
 
 import org.junit.Test;
+import us.hall.trz.osx.MacFileSystem;
 
 public class MacWatchersTest {
 	@Test
