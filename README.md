@@ -1,5 +1,7 @@
 Fork: http://www195.pair.com/mik3hall/index.html#trz
 
+This build has been tested with JDK8 (Oracle and Zulu on MacOS Sierra). LotsOfTests passes.
+
 Build:
 
 ```
@@ -23,8 +25,10 @@ Usage:
 ```
 $ java -cp macnio2.jar -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider LotsOfEvents
 
-$ java -cp target/watchservice.jar -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider LotsOfEvents
+$ java -cp target/watchservice-1.0-SNAPSHOT.jar -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider LotsOfEvents
+```
 
+```
 $ mvn clean test -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider -Dtest=MacWatchersTest
 
 $ mvn clean test -Djava.nio.file.spi.DefaultFileSystemProvider=us.hall.trz.osx.MacFileSystemProvider
